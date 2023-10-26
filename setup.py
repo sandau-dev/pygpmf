@@ -15,6 +15,9 @@ if __name__ == "__main__":
         long_description_content_type="text/markdown",
         version=__version__,
         packages=find_packages(),
+        setup_requires=[
+            "numpy"
+        ],
         install_requires=[
             "numpy", "pandas", "gpxpy",
             "ffmpeg-python", "geopandas",
